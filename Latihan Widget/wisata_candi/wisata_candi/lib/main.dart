@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wisata_candi/Profil_Screen.dart';
 import 'package:wisata_candi/data/candi_data.dart';
 import 'package:wisata_candi/DetailScreen.dart';
 
@@ -12,8 +13,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DetailScreen(
-        candi: candiList[0],
+      // home: DetailScreen(
+      //   candi: candiList[0],
+      home: Profil_Screen(),
       ),
     );
   }
