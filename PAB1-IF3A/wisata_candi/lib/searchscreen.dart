@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:wisata_candi/data/datacandi.dart';
-import 'package:wisata_candi/models/candiiiii.dart';
 import '../models/candiiiii.dart';
 
 class SearchScreen extends StatefulWidget {
@@ -11,8 +10,8 @@ class SearchScreen extends StatefulWidget {
 
 class _SearchScreenState extends State<SearchScreen> {
   final List<Candi> _filteredCandis = candiList;
-  final String searchQuery = '';
-  final TextEditingController searchController = TextEditingController();
+  final String _searchQuery = '';
+  final TextEditingController _searchController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
